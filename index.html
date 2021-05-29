@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- import html5-qrcode-css required-->
+    <link rel="stylesheet" href="./html5-qrcode-css.css">
+    <title>index</title>
+</head>
+
+<body>
+<div id="reader" style="max-width:400px"></div>
+</body>
+
+<!-- import jquery required-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script>
+<!-- import html5-qrcode required-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.0.1/html5-qrcode.min.js"></script>
+
+<script>
+    /**
+     * Here the code is an example from https://github.com/mebjas/html5-qrcode/blob/master/README.md
+     * You also need https or http of localhost for getting WebCamera Stream
+     */
+
+    function onScanSuccess(qrMessage) {
+        // handle the scanned code as you like, for example:
+        console.log(`QR matched = ${qrMessage}`);
+    }
+
+    function onScanFailure(error) {
+        // handle scan failure, usually better to ignore and keep scanning.
+        // for example:
+        console.warn(`QR error = ${error}`);
+    }
+
+    let html5QrcodeScanner = new Html5QrcodeScanner("reader", {fps: 10, qrbox: 250}, /* verbose= */ false);
+    html5QrcodeScanner.render(onScanSuccess, onScanFailure);
+</script>
+
+<!-- import html5-qrcode-css required-->
+<script src="./html5-qrcode-css.js"></script>
+
+</html>
