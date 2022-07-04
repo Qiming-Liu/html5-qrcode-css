@@ -1,5 +1,5 @@
 # Html5-QRCode-CSS 
-A css theme for html5-qrcode.
+A css theme for [html5-qrcode](https://github.com/mebjas/html5-qrcode)@2.0.1.
 
 | <img src="./img/1.png"> | <img src="./img/2.png">|
 | -- | -- |
