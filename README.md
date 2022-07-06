@@ -5,7 +5,8 @@ A css theme for [html5-qrcode](https://github.com/mebjas/html5-qrcode)@2.0.1.
 | -- | -- |
 
 ## How to use?
-> For example code [read index.html](https://github.com/Qiming-Liu/html5-qrcode-css/blob/main/index.html).  
+> [Demo](https://qiming-liu.github.io/html5-qrcode-css/)  
+> [Example Code](https://github.com/Qiming-Liu/html5-qrcode-css/blob/main/index.html)  
 
 1. Add `html5-qrcode-css.css` in your web page. 
 ```html
